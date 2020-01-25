@@ -57,3 +57,74 @@ function createEmployee() {
   })
 }
 
+function promptUser() {
+    return inquirer.prompt([
+      {
+        type: "input",
+        name: "name",
+        message: "What is the employee name?"
+      },
+      {
+        type: "input",
+        name: "id",
+        message: "What is the employee id?",
+      },
+      {
+        type: "input",
+        name: "email",
+        message: "What is the email?",
+        validate: value => value.includes("@") && value.includes(".com") ? true : 'email invalid'
+      },
+      {
+        type: "list",
+        name: "role",
+        message: "What role are we adding?",
+        choices: ["Manager", "Engineer", "Intern"]
+      }
+    ])
+  }
+  
+  function promptIntern() {
+    return inquirer.prompt([
+      {
+        type: "input",
+        name: "school",
+        message: "what is their school?"
+      },
+      {
+        type: "confirm",
+        name: "anotherEmployee",
+        message: "Would you like to add another employee?"
+      }
+    ])
+  }
+  
+  function promptManager() {
+    return inquirer.prompt([
+      {
+        type: "input",
+        name: "officeNumber",
+        message: "what is your office?"
+      },
+      {
+        type: "confirm",
+        name: "anotherEmployee",
+        message: "Would you like to add another employee?"
+      }
+    ])
+  }
+  
+  function promptEngineer() {
+    return inquirer.prompt([
+      {
+        type: "input",
+        name: "gihub",
+        message: "what is their github?"
+      },
+      {
+        type: "confirm",
+        name: "anotherEmployee",
+        message: "Would you like to add another employee?"
+      }
+    ])
+  }
