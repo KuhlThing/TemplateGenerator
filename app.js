@@ -72,7 +72,7 @@ function promptUser() {
       {
         type: "input",
         name: "email",
-        message: "What is the email?",
+        message: "What is the employee email?",
         validate: value => value.includes("@") && value.includes(".com") ? true : 'email invalid'
       },
       {
