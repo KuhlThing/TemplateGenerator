@@ -1,0 +1,32 @@
+{
+  "name": "templategenerator",
+  "version": "1.0.0",
+  "description": "As a manager, I want an easy way to generate a page for quick reference to my employees' information, such as email, GitHub, etc. so that I can have that information on hand.",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest --verbose test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KuhlThing/TemplateGenerator.git"
+  },
+  "author": "patrickmcdowell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KuhlThing/TemplateGenerator/issues"
+  },
+  "homepage": "https://github.com/KuhlThing/TemplateGenerator",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "inquirer": "^6.5.2",
+    "open": "^7.0.0",
+    "util": "^0.12.1"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
