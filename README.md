@@ -4,21 +4,7 @@ This app prompts the user for their job, employee ID, email, and role. Different
 
 Steps:
 
--Open terminal and navigate to the app folder
-
--npm install
-
--npm install inquirer
-
--npm install util
-
--npm install fs
-
--npm install open
-
--node app.js
-
--follow prompts
+-Open terminal and navigate to the app folder, type "npm install", and follow the prompts.
 
 
 
