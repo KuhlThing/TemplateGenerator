@@ -1,7 +1,7 @@
 {
   "name": "templategenerator",
   "version": "1.0.0",
-  "description": "As a manager, I want an easy way to generate a page for quick reference to my employees' information, such as email, GitHub, etc. so that I can have that information on hand.",
+  "description": "Development team profile generator",
   "main": "app.js",
   "directories": {
     "lib": "lib",
